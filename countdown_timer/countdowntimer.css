@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-image: url(./winter2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0;
+    overflow: hidden;
+}
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.container{
+    display: flex;
+    font-size: 2rem;
+}
+.container .time{
+    padding: 50px;
+    text-align: center;
+    color: black;
+}
+.container .text{
+    margin-top: 10px;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width:800px){
+    .container{
+        flex-wrap: wrap;
+    }
+    body{
+        overflow: scroll;
+        scroll-behavior:smooth;
+    }
+}
